@@ -1,0 +1,64 @@
+name: Build AntiCheat Plugin
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+        
+    - name: Build with Maven
+      run: mvn clean package
+      
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: AntiCheat-Plugin
+        path: target/AntiCheat-*.jar
+        
+    - name: Delete old release and tag
+      run: |
+        gh release delete latest --yes || true
+        git push --delete origin latest || true
+      env:
+        GH_TOKEN: ${{ github.token }}
+        
+    - name: Create new release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: latest
+        name: Latest Build
+        body: |
+          🚀 AntiCheat Plugin - Latest Build
+          
+          👤 Author: Faiz
+        files: target/AntiCheat-*.jar
+        draft: false
+        prerelease: false
+
+    - name: Clean up old workflow runs
+      uses: MajorScruffy/delete-old-workflow-runs@v0.3.0
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        repository: ${{ github.repository }}
+        older-than-seconds: 86400  # 删除24小时前的记录
