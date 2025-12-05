@@ -1,0 +1,6 @@
+name: AntiCheat
+version: 1.0.5
+main: com.faiz.AntiCheat.AntiCheat
+api-version: 1.21
+author: Faiz
+description: AntiCheat Plugin for Paper/Bukkit
