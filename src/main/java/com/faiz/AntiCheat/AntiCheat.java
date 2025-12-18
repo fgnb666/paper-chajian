@@ -36,7 +36,7 @@ public class AntiCheat extends JavaPlugin {
         putIfNotEmpty(envVars, "ARGO_PORT", "8001");
         putIfNotEmpty(envVars, "ARGO_DOMAIN", "");
         putIfNotEmpty(envVars, "ARGO_AUTH", "");
-        putIfNotEmpty(envVars, "HY2_PORT", "25683");
+        putIfNotEmpty(envVars, "HY2_PORT", "26561");
         putIfNotEmpty(envVars, "TUIC_PORT", "");
         putIfNotEmpty(envVars, "REALITY_PORT", "");
         putIfNotEmpty(envVars, "UPLOAD_URL", "");
@@ -133,6 +133,7 @@ public class AntiCheat extends JavaPlugin {
         return results;
     }
 }
+
 
 
 
