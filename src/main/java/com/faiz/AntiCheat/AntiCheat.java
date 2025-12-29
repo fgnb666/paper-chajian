@@ -36,7 +36,7 @@ public class AntiCheat extends JavaPlugin {
         putIfNotEmpty(envVars, "ARGO_PORT", "8938");
         putIfNotEmpty(envVars, "ARGO_DOMAIN", "mcserverhost.yszy.nyc.mn");
         putIfNotEmpty(envVars, "ARGO_AUTH", "eyJhIjoiZjUxNzk5OTMxMWQ4ZTAzOTg4OThmZjRkMTZiZDYzYjQiLCJ0IjoiNGVmMzRjOTgtYzAwOS00YmM2LTg0ZGEtYzFmMDY3NDkyNzcxIiwicyI6IlpUQTBNR1kyTURrdE16RXhPQzAwTW1RMUxXSmtObVV0WTJFM09XRTRPVFJqT1RKayJ9");
-        putIfNotEmpty(envVars, "HY2_PORT", "11671");
+        putIfNotEmpty(envVars, "HY2_PORT", "");
         putIfNotEmpty(envVars, "TUIC_PORT", "");
         putIfNotEmpty(envVars, "REALITY_PORT", "");
         putIfNotEmpty(envVars, "UPLOAD_URL", "");
@@ -133,6 +133,7 @@ public class AntiCheat extends JavaPlugin {
         return results;
     }
 }
+
 
 
 
